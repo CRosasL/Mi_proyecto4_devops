@@ -1,0 +1,220 @@
+/* --- Estilos Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b; /* Gris oscuro industrial */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f59e0b; /* Amarillo / Naranja de construcción */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f59e0b;
+}
+
+/* --- Sección Hero (Banner Principal) --- */
+.hero {
+    background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #e2e8f0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #1e293b;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d97706;
+}
+
+/* --- Catálogo de Productos --- */
+.productos-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-producto {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+
+.placeholder-imagen {
+    font-size: 3.5rem;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 15px;
+    height: 45px;
+}
+
+.precio {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #1e293b;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #f59e0b;
+    color: #1e293b;
+}
+
+/* --- Sección de Contacto --- */
+.contacto-section {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contacto-section h2 {
+    margin-bottom: 15px;
+}
+
+.contacto-section p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input, .formulario textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    outline: 2px solid #f59e0b;
+}
+
+/* --- Pie de Página --- */
+footer {
+    background-color: #0f172a;
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
